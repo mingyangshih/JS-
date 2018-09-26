@@ -1,0 +1,30 @@
+$images:  '../images';
+$font-op:  'Open Sans';
+$font:  'Noto Sans TC';
+
+@mixin bg($name,$bg){
+    background: url("../images/#{$name}.#{$bg}");
+    // width: image-width("../images/#{$name}.#{$bg}");
+    // height: image-height("../images/#{$name}.#{$bg}");
+}
+
+%position-ab{
+    position:absolute;
+}
+
+%btn-setting{
+    box-sizing: border-box;
+    text-align: center;
+    width: 16.25%;
+    height: 42px;
+    font-family: $font;
+    font-size: 20px;
+    line-height: 21px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding-top: 11px;
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 2.875%;
+    margin-top: 14px;
+}

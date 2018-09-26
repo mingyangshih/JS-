@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 49, ../sass/_reset.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 11, ../sass/_mixin.scss */
+.banner .title, .banner form, .banner .middle-btn {
+  position: absolute;
+}
+
+/* line 15, ../sass/_mixin.scss */
+.banner .middle-btn .ling-ya, .banner .middle-btn .san-ming, .banner .middle-btn .sing-sing, .banner .middle-btn .yeng-cheng {
+  box-sizing: border-box;
+  text-align: center;
+  width: 16.25%;
+  height: 42px;
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  line-height: 21px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding-top: 11px;
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 2.875%;
+  margin-top: 14px;
+}
+
+/* line 2, ../sass/_index.scss */
+html {
+  background: #f7f7f7;
+}
+
+/* line 5, ../sass/_index.scss */
+.banner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* line 8, ../sass/_index.scss */
+.banner .wrap {
+  background: url("../images/the-urban-landscape-1698285.png");
+  max-width: 100%;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+/* line 17, ../sass/_index.scss */
+.banner .title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans";
+  color: white;
+  font-size: 40px;
+  line-height: 41px;
+  font-weight: bold;
+  top: 89px;
+}
+/* line 29, ../sass/_index.scss */
+.banner form {
+  width: 100%;
+  top: 225px;
+}
+/* line 34, ../sass/_index.scss */
+.banner #list {
+  display: block;
+  box-sizing: border-box;
+  padding-left: 9.5px;
+  width: 44.1406%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  height: 48px;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 21px;
+  font-family: "Noto Sans TC";
+}
+/* line 49, ../sass/_index.scss */
+.banner .middle-btn {
+  box-sizing: border-box;
+  width: 78.125%;
+  background: #FFFFFF;
+  top: 352px;
+  left: 10.9375%;
+  height: 112px;
+  box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/* line 59, ../sass/_index.scss */
+.banner .middle-btn .hot-place {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  padding-left: 3.25%;
+}
+/* line 68, ../sass/_index.scss */
+.banner .middle-btn .ling-ya {
+  background: #8A82CC;
+  margin-left: 6.375%;
+}
+/* line 72, ../sass/_index.scss */
+.banner .middle-btn .ling-ya:hover {
+  background: #4f43b9;
+}
+/* line 76, ../sass/_index.scss */
+.banner .middle-btn .san-ming {
+  background: #FFA782;
+}
+/* line 79, ../sass/_index.scss */
+.banner .middle-btn .san-ming:hover {
+  background: #f88350;
+}
+/* line 83, ../sass/_index.scss */
+.banner .middle-btn .sing-sing {
+  background: #F5D005;
+}
+/* line 86, ../sass/_index.scss */
+.banner .middle-btn .sing-sing:hover {
+  background: #fce567;
+}
+/* line 90, ../sass/_index.scss */
+.banner .middle-btn .yeng-cheng {
+  background: #559AC8;
+}
+/* line 93, ../sass/_index.scss */
+.banner .middle-btn .yeng-cheng:hover {
+  background: #2a8bcc;
+}
+
+/* line 99, ../sass/_index.scss */
+.icon {
+  width: 100%;
+  position: relative;
+  margin-bottom: 136px;
+}
+/* line 103, ../sass/_index.scss */
+.icon .dash-line {
+  width: 87.8906%;
+  border: 1px dashed #559AC8;
+  margin-top: 133px;
+  margin-left: 6.05469%;
+  top: 0px;
+  position: relative;
+  z-index: 1;
+}
+/* line 112, ../sass/_index.scss */
+.icon .icon-down {
+  position: relative;
+  top: -12px;
+  left: 48.92578%;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #559AC8;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 124, ../sass/_index.scss */
+.icon img {
+  margin-top: 4px;
+}

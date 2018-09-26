@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html{
+    background: #f7f7f7;
+}
+.banner{
+    max-width: 1024px;
+    margin: 0 auto;
+    .wrap{
+        @include bg(the-urban-landscape-1698285,png);
+        max-width: 100%;  
+        height: 380px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        position: relative;
+    }
+    .title{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: $font-op;
+        color:white;
+        font-size: 40px;
+        line-height: 41px;
+        font-weight: bold;
+        @extend %position-ab;
+        top: 89px;
+    }
+    form{
+        width: 100%;
+        @extend %position-ab;
+        top: 225px;
+    }
+    #list{
+        display: block;
+        box-sizing: border-box;
+        padding-left: 9.5px;
+        width: 44.1406%;
+        background-color: rgba(255,255,255,0.70);
+        margin: 0 auto;  
+        height: 48px;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000000;
+        line-height: 21px;
+        font-family: $font;
+    }
+    .middle-btn{
+        box-sizing: border-box;
+        width: 78.125%;
+        @extend %position-ab;
+        background: #FFFFFF;
+        top: 352px;
+        left: 10.9375%;
+        height: 112px;
+        box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.20);
+        border-radius: 5px;
+        .hot-place{
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            margin-top: 20px;
+            font-family: $font;
+            font-size: 18px;
+            padding-left: 3.25%;
+        }
+        .ling-ya{
+            @extend %btn-setting;
+            background:#8A82CC;
+            margin-left: 6.375%;
+            &:hover{
+                background:rgb(79, 67, 185);
+            }
+        }
+        .san-ming{
+            @extend %btn-setting;
+            background:#FFA782;
+            &:hover{
+                background:rgb(248, 131, 80);
+            }
+        }
+        .sing-sing{
+            @extend %btn-setting;
+            background:#F5D005;
+            &:hover{
+                background:rgb(252, 229, 103);
+            }
+        }
+        .yeng-cheng{
+            @extend %btn-setting;
+            background:#559AC8;
+            &:hover{
+                background:rgb(42, 139, 204);
+            }
+        }
+    }
+}
+.icon{
+    width: 100%;
+    position: relative;
+    margin-bottom: 136px;
+    .dash-line{
+        width: 87.8906%;
+        border: 1px dashed #559AC8;
+        margin-top: 133px;
+        margin-left: (62/1024)*100%;
+        top:0px;
+        position: relative;
+        z-index: 1;
+    }
+    .icon-down{
+        position: relative;
+        top: -12px;
+        left: (501/1024)*100%;
+        z-index: 2;
+        width: 24px;
+        height: 24px;
+        border: 3px solid #559AC8;
+        border-radius: 50%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    img{
+        margin-top: 4px;
+    }
+}
+
+
+
+
+  
+  
+  
+  
