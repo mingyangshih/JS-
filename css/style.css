@@ -66,13 +66,13 @@ img {
   height: auto;
 }
 
-/* line 11, ../sass/_mixin.scss */
-.banner .title, .banner form, .banner .middle-btn {
+/* line 22, ../sass/_mixin.scss */
+.wrap .title, .wrap form, .wrap .middle-btn {
   position: absolute;
 }
 
-/* line 15, ../sass/_mixin.scss */
-.banner .middle-btn .ling-ya, .banner .middle-btn .san-ming, .banner .middle-btn .sing-sing, .banner .middle-btn .yeng-cheng {
+/* line 26, ../sass/_mixin.scss */
+.wrap .middle-btn .ling-ya, .wrap .middle-btn .san-ming, .wrap .middle-btn .sing-sing, .wrap .middle-btn .yeng-cheng {
   box-sizing: border-box;
   text-align: center;
   width: 16.25%;
@@ -94,13 +94,13 @@ html {
   background: #f7f7f7;
 }
 
-/* line 5, ../sass/_index.scss */
-.banner {
+/* line 6, ../sass/_index.scss */
+.wrap {
   max-width: 1024px;
   margin: 0 auto;
 }
-/* line 8, ../sass/_index.scss */
-.banner .wrap {
+/* line 9, ../sass/_index.scss */
+.wrap .banner {
   background: url("../images/the-urban-landscape-1698285.png");
   max-width: 100%;
   height: 380px;
@@ -108,9 +108,10 @@ html {
   background-position: top center;
   background-size: cover;
   position: relative;
+  margin-bottom: 133px;
 }
-/* line 17, ../sass/_index.scss */
-.banner .title {
+/* line 19, ../sass/_index.scss */
+.wrap .title {
   display: block;
   width: 100%;
   text-align: center;
@@ -121,13 +122,13 @@ html {
   font-weight: bold;
   top: 89px;
 }
-/* line 29, ../sass/_index.scss */
-.banner form {
+/* line 31, ../sass/_index.scss */
+.wrap form {
   width: 100%;
   top: 225px;
 }
-/* line 34, ../sass/_index.scss */
-.banner #list {
+/* line 36, ../sass/_index.scss */
+.wrap #list {
   display: block;
   box-sizing: border-box;
   padding-left: 9.5px;
@@ -142,8 +143,8 @@ html {
   line-height: 21px;
   font-family: "Noto Sans TC";
 }
-/* line 49, ../sass/_index.scss */
-.banner .middle-btn {
+/* line 51, ../sass/_index.scss */
+.wrap .middle-btn {
   box-sizing: border-box;
   width: 78.125%;
   background: #FFFFFF;
@@ -153,8 +154,8 @@ html {
   box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
-/* line 59, ../sass/_index.scss */
-.banner .middle-btn .hot-place {
+/* line 61, ../sass/_index.scss */
+.wrap .middle-btn .hot-place {
   width: 100%;
   display: block;
   box-sizing: border-box;
@@ -163,48 +164,46 @@ html {
   font-size: 18px;
   padding-left: 3.25%;
 }
-/* line 68, ../sass/_index.scss */
-.banner .middle-btn .ling-ya {
+/* line 70, ../sass/_index.scss */
+.wrap .middle-btn .ling-ya {
   background: #8A82CC;
   margin-left: 6.375%;
 }
-/* line 72, ../sass/_index.scss */
-.banner .middle-btn .ling-ya:hover {
+/* line 74, ../sass/_index.scss */
+.wrap .middle-btn .ling-ya:hover {
   background: #4f43b9;
 }
-/* line 76, ../sass/_index.scss */
-.banner .middle-btn .san-ming {
+/* line 78, ../sass/_index.scss */
+.wrap .middle-btn .san-ming {
   background: #FFA782;
 }
-/* line 79, ../sass/_index.scss */
-.banner .middle-btn .san-ming:hover {
+/* line 81, ../sass/_index.scss */
+.wrap .middle-btn .san-ming:hover {
   background: #f88350;
 }
-/* line 83, ../sass/_index.scss */
-.banner .middle-btn .sing-sing {
+/* line 85, ../sass/_index.scss */
+.wrap .middle-btn .sing-sing {
   background: #F5D005;
 }
-/* line 86, ../sass/_index.scss */
-.banner .middle-btn .sing-sing:hover {
+/* line 88, ../sass/_index.scss */
+.wrap .middle-btn .sing-sing:hover {
   background: #fce567;
 }
-/* line 90, ../sass/_index.scss */
-.banner .middle-btn .yeng-cheng {
+/* line 92, ../sass/_index.scss */
+.wrap .middle-btn .yeng-cheng {
   background: #559AC8;
 }
-/* line 93, ../sass/_index.scss */
-.banner .middle-btn .yeng-cheng:hover {
+/* line 95, ../sass/_index.scss */
+.wrap .middle-btn .yeng-cheng:hover {
   background: #2a8bcc;
 }
-
-/* line 99, ../sass/_index.scss */
-.icon {
-  width: 100%;
+/* line 101, ../sass/_index.scss */
+.wrap .icon {
   position: relative;
-  margin-bottom: 136px;
+  margin-bottom: 76px;
 }
-/* line 103, ../sass/_index.scss */
-.icon .dash-line {
+/* line 104, ../sass/_index.scss */
+.wrap .icon .dash-line {
   width: 87.8906%;
   border: 1px dashed #559AC8;
   margin-top: 133px;
@@ -213,11 +212,11 @@ html {
   position: relative;
   z-index: 1;
 }
-/* line 112, ../sass/_index.scss */
-.icon .icon-down {
+/* line 113, ../sass/_index.scss */
+.wrap .icon .icon-down {
   position: relative;
   top: -12px;
-  left: 48.92578%;
+  left: 49%;
   z-index: 2;
   width: 24px;
   height: 24px;
@@ -226,7 +225,72 @@ html {
   text-align: center;
   box-sizing: border-box;
 }
-/* line 124, ../sass/_index.scss */
-.icon img {
+/* line 125, ../sass/_index.scss */
+.wrap .icon img {
   margin-top: 4px;
+}
+/* line 130, ../sass/_index.scss */
+.wrap .position-title {
+  width: 100%;
+}
+/* line 132, ../sass/_index.scss */
+.wrap .position-title .location-title {
+  display: block;
+  font-family: "Noto Sans TC";
+  font-size: 36px;
+  color: #8A82CC;
+  text-align: center;
+  width: 109px;
+  margin-left: 44.72656%;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+/* line 144, ../sass/_index.scss */
+.wrap .item {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 40px;
+}
+/* line 150, ../sass/_index.scss */
+.wrap .item .item-list {
+  width: 464px;
+  margin-right: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 273px;
+  margin-bottom: 36px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+/* line 16, ../sass/_mixin.scss */
+.wrap .item .item-list:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 160, ../sass/_index.scss */
+.wrap .item img {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: -80px;
+}
+/* line 166, ../sass/_index.scss */
+.wrap .item p {
+  font-family: "Noto Sans TC";
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  top: 117px;
+  left: 22px;
+}
+/* line 174, ../sass/_index.scss */
+.wrap .item .white-place {
+  width: 464px;
+  height: 118px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

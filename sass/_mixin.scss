@@ -1,13 +1,24 @@
 $images:  '../images';
 $font-op:  'Open Sans';
 $font:  'Noto Sans TC';
-
+$item-width-count: 944px;
+//  mix in
 @mixin bg($name,$bg){
     background: url("../images/#{$name}.#{$bg}");
     // width: image-width("../images/#{$name}.#{$bg}");
     // height: image-height("../images/#{$name}.#{$bg}");
 }
 
+@mixin grid($column_num,$column_gutter){
+    width: ($item-width-count - $column_gutter*($column_num - 1) ) / $column_num;
+    margin-right: $column_gutter;
+    box-sizing: border-box;
+    &:nth-child(#{$column_num}n){
+        margin-right: 0;
+    }
+}
+
+// expand
 %position-ab{
     position:absolute;
 }

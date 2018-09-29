@@ -2,10 +2,11 @@
 html{
     background: #f7f7f7;
 }
-.banner{
+// header
+.wrap{
     max-width: 1024px;
     margin: 0 auto;
-    .wrap{
+    .banner{
         @include bg(the-urban-landscape-1698285,png);
         max-width: 100%;  
         height: 380px;
@@ -13,6 +14,7 @@ html{
         background-position: top center;
         background-size: cover;
         position: relative;
+        margin-bottom: 133px;
     }
     .title{
         display: block;
@@ -95,36 +97,95 @@ html{
             }
         }
     }
-}
-.icon{
-    width: 100%;
-    position: relative;
-    margin-bottom: 136px;
-    .dash-line{
-        width: 87.8906%;
-        border: 1px dashed #559AC8;
-        margin-top: 133px;
-        margin-left: (62/1024)*100%;
-        top:0px;
+    // icon
+    .icon{
         position: relative;
-        z-index: 1;
+        margin-bottom: 76px;
+        .dash-line{
+            width: 87.8906%;
+            border: 1px dashed #559AC8;
+            margin-top: 133px;
+            margin-left: (62/1024)*100%;
+            top:0px;
+            position: relative;
+            z-index: 1;
+        }
+        .icon-down{
+            position: relative;
+            top: -12px;
+            left: 49%;
+            z-index: 2;
+            width: 24px;
+            height: 24px;
+            border: 3px solid #559AC8;
+            border-radius: 50%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        img{
+            margin-top: 4px;
+        }
     }
-    .icon-down{
-        position: relative;
-        top: -12px;
-        left: (501/1024)*100%;
-        z-index: 2;
-        width: 24px;
-        height: 24px;
-        border: 3px solid #559AC8;
-        border-radius: 50%;
-        text-align: center;
+    // position title
+    .position-title{
+        width: 100%;
+        .location-title{
+            display: block;
+            font-family: $font;
+            font-size: 36px;
+            color: #8A82CC;
+            text-align: center;
+            width: 109px;
+            margin-left: (458/1024)*100%;
+            margin-bottom: 24px;
+            box-sizing: border-box;
+        }
+    }
+    .item{
+        
+        display: block;
         box-sizing: border-box;
-    }
-    img{
-        margin-top: 4px;
+        width: 100%;
+        padding: 0 40px;
+        .item-list{
+            @include grid(2,16px);
+            display: inline-block;
+            height: 273px;
+            margin-bottom: 36px;
+            background: #FFFFFF;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+            overflow: hidden;
+            position: relative;
+        }
+        img{
+            height: auto;
+            width: 100%;
+            position: absolute;
+            top: -80px;
+        }
+        p{
+            font-family: $font;
+            color: #ffffff;
+            font-size: 24px;
+            position: absolute;
+            top: 117px;
+            left: 22px;
+        }
+        .white-place{
+            width: 464px;
+            height: 118px;
+            background: #ffffff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
     }
 }
+
+
+
+
+
 
 
 
