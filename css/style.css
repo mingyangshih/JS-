@@ -89,6 +89,15 @@ img {
   margin-top: 14px;
 }
 
+/* line 43, ../sass/_mixin.scss */
+.item .white-place .opentime, .item .white-place .add, .item .white-place .phone {
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  color: #000000;
+  margin-left: 9px;
+  margin-top: 16px;
+}
+
 /* line 2, ../sass/_index.scss */
 html {
   background: #f7f7f7;
@@ -245,15 +254,16 @@ html {
   margin-bottom: 24px;
   box-sizing: border-box;
 }
-/* line 144, ../sass/_index.scss */
-.wrap .item {
+
+/* line 146, ../sass/_index.scss */
+.item {
   display: block;
   box-sizing: border-box;
   width: 100%;
   padding: 0 40px;
 }
-/* line 150, ../sass/_index.scss */
-.wrap .item .item-list {
+/* line 152, ../sass/_index.scss */
+.item .item-list {
   width: 464px;
   margin-right: 16px;
   box-sizing: border-box;
@@ -266,18 +276,18 @@ html {
   position: relative;
 }
 /* line 16, ../sass/_mixin.scss */
-.wrap .item .item-list:nth-child(2n) {
+.item .item-list:nth-child(2n) {
   margin-right: 0;
 }
-/* line 160, ../sass/_index.scss */
-.wrap .item img {
+/* line 162, ../sass/_index.scss */
+.item img {
   height: auto;
   width: 100%;
   position: absolute;
   top: -80px;
 }
-/* line 166, ../sass/_index.scss */
-.wrap .item p {
+/* line 168, ../sass/_index.scss */
+.item .name {
   font-family: "Noto Sans TC";
   color: #ffffff;
   font-size: 24px;
@@ -285,12 +295,16 @@ html {
   top: 117px;
   left: 22px;
 }
-/* line 174, ../sass/_index.scss */
-.wrap .item .white-place {
+/* line 176, ../sass/_index.scss */
+.item .white-place {
   width: 464px;
   height: 118px;
   background: #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+/* line 183, ../sass/_index.scss */
+.item .white-place .opentime {
+  display: inline-block;
 }
