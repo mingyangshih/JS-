@@ -32,7 +32,8 @@ for(var i=0;i<data_final.length;i++){
 var list_value = list.value;
 changeh2();
 change_item();
-add_icon()
+add_icon();
+
 // element_inli()
 list.addEventListener('change',function(){
     list_value = list.value;
@@ -53,6 +54,7 @@ for(var i=0;i<btn_place.length;i++){
     })
     
 }
+
 //--------------------------------------------------
 
 // add position to position title------------------------
@@ -75,6 +77,7 @@ function change_item(){
     var item = document.querySelector('.item');
     var item_use_h2 = changeh2();  //list value
     item.innerHTML = '';
+    // create li
     for(var i=0; i<data_place.length; i++ ){
         if(data_place[i]==item_use_h2){
             var item_li = document.createElement('li');
@@ -84,6 +87,7 @@ function change_item(){
             item.appendChild(item_li);
         }    
     }
+    // add li content
     var el = document.querySelectorAll('.item-list'); 
     var il_len = el.length;
     for(var i=0; i<il_len; i++){
@@ -101,7 +105,21 @@ function change_item(){
         var il_div = document.createElement('div');
         il_div.setAttribute('class','white-place');
         el[i].appendChild(il_div);
-    }       
+    }
+    var n =6;
+    var pagenum = document.querySelector('.page-num');
+    if (il_len/n < 1){
+        pagenum.innerHTML="<a href="+'#'+" data-num="+"1"+">1</a>";
+    }else if(il_len/n > 1){
+        pagenum.innerHTML="<a href="+'#'+" data-num="+"1"+">1</a>"+"<a href="+'#'+" data-num="+"2"+">2</a>";
+        for(var j=6;j<il_len;j++){
+            el[j].style.display = 'none';
+        }
+    }else if(il_len/n > 2) {
+        pagenum.innerHTML="<a href="+'#'+">1</a>"+"<a href="+'#'+">2</a>"+"<a href="+'#'+">3</a>";
+    }
+    // page number add event 
+    page_num_event()
 }
 function add_icon(){
     //add div content  
@@ -129,5 +147,38 @@ function add_icon(){
         div_ticketinfo.setAttribute('class',' ticket fas fa-tag');
         div_ticketinfo.textContent = data[datanum].Ticketinfo;
         el_div[i].appendChild(div_ticketinfo);
+    }
+}
+
+function page_num_event(){
+    // page num event
+    var el = document.querySelectorAll('.item-list'); 
+    var il_len = el.length;
+    var pagenum_a = document.querySelectorAll('.page-num a');
+    for(var i=0; i<pagenum_a.length;i++){
+        pagenum_a[i].addEventListener('click',function(e){
+            e.preventDefault();
+            if (this.dataset.num == 2){
+                for(var j=0;j<il_len;j++){
+                    if(j<6){
+                        el[j].style.display = 'none';
+                    }
+                    else{
+                        el[j].style.display = 'inline-block';
+                    }
+                }
+            }else{
+                for(var j=0;j<il_len;j++){
+                    if(j>5){
+                        el[j].style.display = 'none';
+                    }
+                    else{
+                        el[j].style.display = 'inline-block';
+                    }
+                }
+            }
+
+            
+        })
     }
 }

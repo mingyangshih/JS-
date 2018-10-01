@@ -269,7 +269,7 @@ html {
   margin-right: 16px;
   box-sizing: border-box;
   display: inline-block;
-  height: 273px;
+  height: 285px;
   margin-bottom: 36px;
   background: #FFFFFF;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -304,7 +304,7 @@ html {
   bottom: 0;
   left: 0;
   font-family: "Noto Sans TC";
-  height: 118px;
+  height: 134px;
 }
 /* line 184, ../sass/_index.scss */
 .item .white-place .opentime {
@@ -321,31 +321,31 @@ html {
 .item .white-place .add {
   display: block;
 }
-/* line 199, ../sass/_index.scss */
+/* line 200, ../sass/_index.scss */
 .item .white-place .add:before {
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
   margin-right: 10px;
   color: #f5a623;
 }
-/* line 206, ../sass/_index.scss */
+/* line 207, ../sass/_index.scss */
 .item .white-place .phone {
   display: inline-block;
 }
-/* line 210, ../sass/_index.scss */
+/* line 211, ../sass/_index.scss */
 .item .white-place .phone:before {
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
   margin-right: 12px;
   color: #559ac8;
 }
-/* line 217, ../sass/_index.scss */
+/* line 218, ../sass/_index.scss */
 .item .white-place .ticket {
   font-family: "Noto Sans TC";
   color: #000000;
   margin-bottom: 19px;
 }
-/* line 222, ../sass/_index.scss */
+/* line 223, ../sass/_index.scss */
 .item .white-place .ticket:before {
   font-family: "Font Awesome 5 Free";
   margin-left: 180px;
@@ -354,14 +354,38 @@ html {
   color: #f5d005;
 }
 
-/* line 231, ../sass/_index.scss */
+/* line 232, ../sass/_index.scss */
 .a-gotop, .gotop {
   position: fixed;
   right: 430px;
   top: 800px;
 }
 
-/* line 237, ../sass/_index.scss */
+/* line 238, ../sass/_index.scss */
+.page-num {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 41px;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+/* line 245, ../sass/_index.scss */
+.page-num a {
+  display: inline-block;
+  margin-right: 34px;
+  text-decoration: none;
+  color: rgba(74, 74, 74, 0.5);
+}
+/* line 250, ../sass/_index.scss */
+.page-num a:hover {
+  color: #4A4A4A;
+}
+/* line 254, ../sass/_index.scss */
+.page-num a:nth-chile(5) {
+  margin-right: 0px;
+}
+
+/* line 259, ../sass/_index.scss */
 .footer {
   width: 100%;
   background: #559AC8;
@@ -369,18 +393,18 @@ html {
   box-sizing: border-box;
   padding: 24px 0;
 }
-/* line 243, ../sass/_index.scss */
+/* line 265, ../sass/_index.scss */
 .footer p {
   width: 100%;
   text-align: center;
   display: block;
 }
-/* line 248, ../sass/_index.scss */
+/* line 270, ../sass/_index.scss */
 .footer p:nth-child(1) {
   margin-bottom: 16px;
   color: #FFFFFF;
 }
-/* line 252, ../sass/_index.scss */
+/* line 274, ../sass/_index.scss */
 .footer p:nth-child(2) {
   color: #FFD366;
 }

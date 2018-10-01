@@ -152,7 +152,7 @@ html{
     .item-list{
         @include grid(2,16px);
         display: inline-block;
-        height: 273px;
+        height: 285px;
         margin-bottom: 36px;
         background: #FFFFFF;
         box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
@@ -180,7 +180,7 @@ html{
         bottom: 0;
         left: 0;
         font-family: $font;
-        height: 118px;
+        height: 134px;
         .opentime{
             @extend %white-place-p;
             display: block;
@@ -195,6 +195,7 @@ html{
         .add{
             @extend %white-place-p;
             display: block;
+            // margin-top: 10px;
         }
         .add:before{
             font-family: $font-awe;
@@ -232,6 +233,27 @@ html{
     position: fixed;
     right: 430px;
     top: 800px;
+}
+// page num
+.page-num{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 41px;
+    font-family: $font-op;
+    font-size: 16px;
+    
+    a{
+        display: inline-block;
+        margin-right: 34px;
+        text-decoration: none;
+        color: rgba(74,74,74,0.50);;
+        &:hover{
+            color: #4A4A4A;
+        }
+    }
+    a:nth-chile(5){
+        margin-right: 0px;
+    }
 }
 // footer
 .footer{
