@@ -1,5 +1,6 @@
 // change select list automatically-------------------
 // get all place in data_place
+
 var data_place = [];
 for (var i = 0; i < data.length; i++){
     data_place.push(data[i].Zone);
@@ -26,20 +27,43 @@ for(var i=0;i<data_final.length;i++){
     list.appendChild(create_option);
 }
 // ------------------------------------------------------
-// add position to position title------------------------
+
+// -------------------run function----------------
+var list_value = list.value;
 changeh2();
 change_item();
+add_icon()
 // element_inli()
 list.addEventListener('change',function(){
+    list_value = list.value;
     changeh2();
     change_item();
-    // element_inli();
+    add_icon()
+    
 },false);
+// btn add event
+var btn_place = document.querySelectorAll('.middle-btn a');
+for(var i=0;i<btn_place.length;i++){
+    btn_place[i].addEventListener('click',function(e){
+        e.preventDefault();
+        list_value = this.dataset.place;
+        changeh2();
+        change_item();
+        add_icon()
+    })
+    
+}
+//--------------------------------------------------
+
+// add position to position title------------------------
+// var list_value = list.value; //global variable
 
 function changeh2(){
-    var list_value = list.value;
-    if(list_value == "--請選擇行政區--"){
-        list_value = '三民區'
+    // list_value = list.value;
+    if(list_value == '--請選擇行政區--'){
+        list_value = '三民區';
+    }else if(list_value == undefined){
+        list_value = '三民區';
     }
     var ps_sh = document.querySelector('.position-title');
     ps_sh.innerHTML = "<h2 class="+"location-title"+">"+list_value+'</h>';
@@ -47,8 +71,6 @@ function changeh2(){
 }
 
 // create li--------------------------------------------
-
-
 function change_item(){ 
     var item = document.querySelector('.item');
     var item_use_h2 = changeh2();  //list value
@@ -79,31 +101,33 @@ function change_item(){
         var il_div = document.createElement('div');
         il_div.setAttribute('class','white-place');
         el[i].appendChild(il_div);
-    }   
-    //append div content  
+    }       
+}
+function add_icon(){
+    //add div content  
     var el_div =  document.querySelectorAll('.white-place');
     var div_len = el_div.length;
-    
+    var el = document.querySelectorAll('.item-list'); 
     for(var i=0;i<div_len;i++){
         var datanum = el[i].dataset.num;
-        // var div_i_clock = document.createElement('i');
-        // div_i_clock.setAttribute('class','far fa-clock');
-        // el_div[i].appendChild(div_i_clock);
-
-        // open time
         var div_opentime = document.createElement('p');
-        div_opentime.setAttribute('class','opentime');
+        div_opentime.setAttribute('class','opentime far fa-clock');
         div_opentime.textContent = data[datanum].Opentime;
         el_div[i].appendChild(div_opentime);
         // Address
         var div_add = document.createElement('p');
-        div_add.setAttribute('class','add');
+        div_add.setAttribute('class','add fas fa-map-marker-alt');
         div_add.textContent = data[datanum].Add;
         el_div[i].appendChild(div_add);
         // phone
         var div_phone = document.createElement('p');
-        div_phone.setAttribute('class','phone');
+        div_phone.setAttribute('class','phone fas fa-mobile-alt');
         div_phone.textContent = data[datanum].Tel;
         el_div[i].appendChild(div_phone);
+        // ticketinfo
+        var div_ticketinfo = document.createElement('p');
+        div_ticketinfo.setAttribute('class',' ticket fas fa-tag');
+        div_ticketinfo.textContent = data[datanum].Ticketinfo;
+        el_div[i].appendChild(div_ticketinfo);
     }
 }

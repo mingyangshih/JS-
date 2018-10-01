@@ -66,12 +66,12 @@ img {
   height: auto;
 }
 
-/* line 22, ../sass/_mixin.scss */
+/* line 24, ../sass/_mixin.scss */
 .wrap .title, .wrap form, .wrap .middle-btn {
   position: absolute;
 }
 
-/* line 26, ../sass/_mixin.scss */
+/* line 28, ../sass/_mixin.scss */
 .wrap .middle-btn .ling-ya, .wrap .middle-btn .san-ming, .wrap .middle-btn .sing-sing, .wrap .middle-btn .yeng-cheng {
   box-sizing: border-box;
   text-align: center;
@@ -89,13 +89,13 @@ img {
   margin-top: 14px;
 }
 
-/* line 43, ../sass/_mixin.scss */
+/* line 45, ../sass/_mixin.scss */
 .item .white-place .opentime, .item .white-place .add, .item .white-place .phone {
   font-family: "Noto Sans TC";
   font-size: 16px;
   color: #000000;
-  margin-left: 9px;
-  margin-top: 16px;
+  margin-left: 23px;
+  margin-top: 12px;
 }
 
 /* line 2, ../sass/_index.scss */
@@ -261,6 +261,7 @@ html {
   box-sizing: border-box;
   width: 100%;
   padding: 0 40px;
+  position: relative;
 }
 /* line 152, ../sass/_index.scss */
 .item .item-list {
@@ -275,7 +276,7 @@ html {
   overflow: hidden;
   position: relative;
 }
-/* line 16, ../sass/_mixin.scss */
+/* line 18, ../sass/_mixin.scss */
 .item .item-list:nth-child(2n) {
   margin-right: 0;
 }
@@ -298,13 +299,88 @@ html {
 /* line 176, ../sass/_index.scss */
 .item .white-place {
   width: 464px;
-  height: 118px;
   background: #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
+  font-family: "Noto Sans TC";
+  height: 118px;
 }
-/* line 183, ../sass/_index.scss */
+/* line 184, ../sass/_index.scss */
 .item .white-place .opentime {
+  display: block;
+  font-weight: bold;
+}
+/* line 189, ../sass/_index.scss */
+.item .white-place .opentime:before {
+  font-family: "Font Awesome 5 Free";
+  margin-right: 9px;
+  color: #8a82cc;
+}
+/* line 195, ../sass/_index.scss */
+.item .white-place .add {
+  display: block;
+}
+/* line 199, ../sass/_index.scss */
+.item .white-place .add:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  margin-right: 10px;
+  color: #f5a623;
+}
+/* line 206, ../sass/_index.scss */
+.item .white-place .phone {
   display: inline-block;
+}
+/* line 210, ../sass/_index.scss */
+.item .white-place .phone:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  margin-right: 12px;
+  color: #559ac8;
+}
+/* line 217, ../sass/_index.scss */
+.item .white-place .ticket {
+  font-family: "Noto Sans TC";
+  color: #000000;
+  margin-bottom: 19px;
+}
+/* line 222, ../sass/_index.scss */
+.item .white-place .ticket:before {
+  font-family: "Font Awesome 5 Free";
+  margin-left: 180px;
+  margin-right: 9px;
+  font-size: 20px;
+  color: #f5d005;
+}
+
+/* line 231, ../sass/_index.scss */
+.a-gotop, .gotop {
+  position: fixed;
+  right: 430px;
+  top: 800px;
+}
+
+/* line 237, ../sass/_index.scss */
+.footer {
+  width: 100%;
+  background: #559AC8;
+  font-family: "Noto Sans TC";
+  box-sizing: border-box;
+  padding: 24px 0;
+}
+/* line 243, ../sass/_index.scss */
+.footer p {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+/* line 248, ../sass/_index.scss */
+.footer p:nth-child(1) {
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+/* line 252, ../sass/_index.scss */
+.footer p:nth-child(2) {
+  color: #FFD366;
 }

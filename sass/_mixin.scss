@@ -1,7 +1,9 @@
 $images:  '../images';
 $font-op:  'Open Sans';
 $font:  'Noto Sans TC';
+$font-awe: "Font Awesome 5 Free";
 $item-width-count: 944px;
+
 //  mix in
 @mixin bg($name,$bg){
     background: url("../images/#{$name}.#{$bg}");
@@ -44,6 +46,7 @@ $item-width-count: 944px;
     font-family: $font;
     font-size: 16px;
     color: #000000;  
-    margin-left: 9px;
-    margin-top: 16px;    
+    margin-left: 23px;
+    margin-top: 12px;    
 }
+

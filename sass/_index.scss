@@ -143,12 +143,12 @@ html{
     }
     
 }
-.item{
-        
+.item{   
     display: block;
     box-sizing: border-box;
     width: 100%;
     padding: 0 40px;
+    position: relative;
     .item-list{
         @include grid(2,16px);
         display: inline-block;
@@ -175,21 +175,82 @@ html{
     }
     .white-place{
         width: 464px;
-        height: 118px;
         background: #ffffff;
         position: absolute;
         bottom: 0;
         left: 0;
+        font-family: $font;
+        height: 118px;
         .opentime{
+            @extend %white-place-p;
+            display: block;
+            font-weight:bold;
+        }
+        .opentime:before{
+            font-family: $font-awe;
+            margin-right: 9px;
+            color:#8a82cc;
+        }
+        // add
+        .add{
+            @extend %white-place-p;
+            display: block;
+        }
+        .add:before{
+            font-family: $font-awe;
+            font-size: 20px;
+            margin-right: 10px;
+            color:#f5a623;
+        }
+        // phone
+        .phone{
             @extend %white-place-p;
             display: inline-block;
         }
-        .add{
-            @extend %white-place-p;
+        .phone:before{
+            font-family: $font-awe;
+            font-size: 20px;
+            margin-right: 12px;
+            color: #559ac8;
         }
-        .phone{
-            @extend %white-place-p;
+        // tag
+        .ticket{
+            font-family: $font;
+            color: #000000;
+            margin-bottom: 19px;
         }
+        .ticket:before{
+            font-family: $font-awe;
+            margin-left: 180px;
+            margin-right: 9px;
+            font-size: 20px;
+            color: #f5d005;
+        }
+    }
+}
+.a-gotop,.gotop{
+    position: fixed;
+    right: 430px;
+    top: 800px;
+}
+// footer
+.footer{
+    width: 100%;
+    background: #559AC8;
+    font-family: $font;
+    box-sizing: border-box;
+    padding: 24px 0;
+    p{
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    p:nth-child(1){
+        margin-bottom: 16px;
+        color: #FFFFFF;
+    } 
+    p:nth-child(2){
+        color: #FFD366;
     }
 }
 
