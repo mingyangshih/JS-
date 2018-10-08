@@ -5,7 +5,6 @@ var data_place = [];
 for (var i = 0; i < data.length; i++){
     data_place.push(data[i].Zone);
 }
-console.log(data_place);
 
 // filt data_place to remove same datas
 var data_final = [];
@@ -14,7 +13,6 @@ data_final=data_place.filter(function(element, index, data_place){
     // indexOf  發現元素第一次出現的索引值
 });
 
-console.log(data_final);
 // append place into list automatically
 var list = document.querySelector('#list');
 var str1 = document.createElement('option'); //create an element
@@ -30,14 +28,14 @@ for(var i=0;i<data_final.length;i++){
 
 // -------------------run function----------------
 var list_value = list.value;
-changeh2();
+changehArea();
 change_item();
 add_icon();
 
 // element_inli()
 list.addEventListener('change',function(){
     list_value = list.value;
-    changeh2();
+    changehArea();
     change_item();
     add_icon()
     
@@ -48,7 +46,7 @@ for(var i=0;i<btn_place.length;i++){
     btn_place[i].addEventListener('click',function(e){
         e.preventDefault();
         list_value = this.dataset.place;
-        changeh2();
+        changehArea();
         change_item();
         add_icon()
     })
@@ -60,7 +58,7 @@ for(var i=0;i<btn_place.length;i++){
 // add position to position title------------------------
 // var list_value = list.value; //global variable
 
-function changeh2(){
+function changehArea(){
     // list_value = list.value;
     if(list_value == '--請選擇行政區--'){
         list_value = '三民區';
@@ -75,7 +73,7 @@ function changeh2(){
 // create li--------------------------------------------
 function change_item(){ 
     var item = document.querySelector('.item');
-    var item_use_h2 = changeh2();  //list value
+    var item_use_h2 = changehArea();  //list value
     item.innerHTML = '';
     // create li
     for(var i=0; i<data_place.length; i++ ){
